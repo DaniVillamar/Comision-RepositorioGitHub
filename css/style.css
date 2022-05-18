@@ -6,6 +6,7 @@ body{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     background-color: antiquewhite;
+    background: linear-gradient(#23f0e691, #f8f9fa);
 }
 /* Css para las imagenes principales */
 .imgprincipal{
@@ -103,5 +104,25 @@ footer{
    margin: 0.3em;
    margin-top: 20px;
 }
+#color {
+    transition-property: background-color;
+    transition-duration: 3s;
+  }
 
-
+.mt-btn {
+    margin: 15px;
+    height:40px; 
+    width:100px; 
+    position:relative;
+    top:50%; 
+    left:50%;
+    border-radius: 0.5em;
+    border: 1px 1px 1px;
+    text-align: center;
+    background: white;
+    transition: background ease-in .3s;
+}
+.mt-btn:hover {
+    background: yellow
+    
+}
