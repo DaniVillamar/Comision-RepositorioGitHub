@@ -1,20 +1,41 @@
+
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif
+    box-sizing: border-box;
 }
 body{
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    background-color: antiquewhite;
-    background: linear-gradient(#23f0e691, #f8f9fa);
+    background-image: linear-gradient(to right top, #030303, #52baf2, #26acf5, #000000, #1e2325);
 }
-/* Css para las imagenes principales */
-.imgprincipal{
+header{
+    height: 15vh;
     width: 100%;
-    
+    background-size: cover;
+    background-position: center;
+}
+.container p{
+    text-align: justify;
+    margin: 2em;
+    color: black;
+}
+.container-contactanos{
+    text-align: center;
+    margin: 2em;
 }
 
-header{
+.container h2{
+    text-align: center;
+    margin: 2em;
+}
+.container-contactanos p label{
+    text-align: justify;
+    margin: 2em;
+    color: black;
+        
+}
+/* header{
     grid-area: header;
     background-color: darkgray;
     border: 1px black solid;
@@ -22,8 +43,8 @@ header{
     position: sticky;
     top: 0;
     margin: 1px ;
-}
-main h1 img{   
+} */
+/* main h1 img{   
     grid-area: main;
     margin: 1px ;
     padding: 5px;
@@ -31,25 +52,56 @@ main h1 img{
     font-size: 40px;
     height: 100%;
     width: 100%;
-}
+} */
 
 
 /* Css para el navegador de la pagina web */
-.navbar li{
-    display: inline-block;
-    margin: 5px;
-    padding: 0.3em;
-    text-align: center;
-    grid-area: header;
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-left: 8%;
+    padding-right: 8%;
+    background-color: #03030350;
 }
-.navbar a{
-    text-decoration: none;
-    text-align: center;
-    grid-area: header;
+.logo{
+color: white;
+font-size: 35px;
+letter-spacing: 1px;
+cursor: pointer;
+
+}
+span{
+    color: #f9004d;
 }
 
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.navbar ul li a:hover{
+    color: #f9004d;
+    transition: .4s;
+   
+}
+footer{
+    text-align: center;
+    color: #f9004d;
+    border: 10px 10px black;
+    border-color: #000000
+}
+
+
 /* Css para la seccion de quienes somos */
-.Somos{
+/* .Somos{
     
     grid-area: seccionA;
     
@@ -125,4 +177,4 @@ footer{
 .mt-btn:hover {
     background: yellow
     
-}
+} */
